@@ -26,7 +26,7 @@ export PATH=\"$PY3PATH:\$PATH\"" >> $BASH_RC
 $CONDA3 install --yes seaborn
 
 # python 2 environment
-$CONDA3 create --yes -n python2 python=2 pip ipython pyzmq
+$CONDA3 create --yes -n python2 python=2 pip ipython=3.2.1 pyzmq
 
 # ipython setup
 $PY3PATH/ipython profile create default --ipython-dir $HOME/.ipython
